@@ -1,0 +1,17 @@
+identity:
+  author: s20ss
+  name: dify_plugin_dockling
+  label:
+    en_US: dify_plugin_dockling
+    zh_Hans: dify_plugin_dockling
+    pt_BR: dify_plugin_dockling
+  description:
+    en_US: Tool to convert files to markdown using Dockling package
+    zh_Hans: Tool to convert files to markdown using Dockling package
+    pt_BR: Tool to convert files to markdown using Dockling package
+  icon: icon.svg
+tools:
+  - tools/dify_plugin_dockling.yaml
+extra:
+  python:
+    source: provider/dify_plugin_dockling.py

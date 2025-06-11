@@ -1,0 +1,30 @@
+identity:
+  name: dify_plugin_dockling
+  author: s20ss
+  label:
+    en_US: dify_plugin_dockling
+    zh_Hans: dify_plugin_dockling
+    pt_BR: dify_plugin_dockling
+description:
+  human:
+    en_US: Tool to convert files to markdown using Dockling package
+    zh_Hans: Tool to convert files to markdown using Dockling package
+    pt_BR: Tool to convert files to markdown using Dockling package
+  llm: Tool to convert files to markdown using Dockling package
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: Tool to convert files to markdown using Dockling package
+      zh_Hans: Tool to convert files to markdown using Dockling package
+      pt_BR: Tool to convert files to markdown using Dockling package
+    llm_description: Tool to convert files to markdown using Dockling package
+    form: llm
+extra:
+  python:
+    source: tools/dify_plugin_dockling.py

@@ -1,0 +1,10 @@
+[project]
+name = "dify-dockling-plugin"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dify-plugin>=0.3.2",
+    "docling>=2.36.1",
+]
