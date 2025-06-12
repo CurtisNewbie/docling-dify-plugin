@@ -1,0 +1,30 @@
+identity:
+  name: docling_convert_files_to_chunks
+  author: s20ss
+  label:
+    en_US: Docling Convert Files to Chunks using docling chunker
+    zh_Hans: Docling Convert Files to Chunks using docling chunker
+    pt_BR: Docling Convert Files to Chunks using docling chunker
+description:
+  human:
+    en_US: Tool to convert files to chunks using Docling package
+    zh_Hans: Tool to convert files to chunks using Docling package
+    pt_BR: Tool to convert files to chunks using Docling package
+  llm: Tool to convert files to chunks using Docling package
+parameters:
+  - name: files
+    type: files
+    required: true
+    label:
+      en_US: Files To Convert
+      zh_Hans: 要转换的文件
+      pt_BR: Arquivos para Converter
+    human_description:
+      en_US: Tool to convert files to chunks using Docling package
+      zh_Hans: Tool to convert files to chunks using Docling package
+      pt_BR: Tool to convert files to chunks using Docling package
+    llm_description: Tool to convert files to chunks using Docling package. Converts various files to chunks.
+    form: llm
+extra:
+  python:
+    source: tools/convert_to_chunks.py

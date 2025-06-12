@@ -9,9 +9,13 @@ identity:
     en_US: Tool to convert files to markdown using Dockling package
     zh_Hans: Tool to convert files to markdown using Dockling package
     pt_BR: Tool to convert files to markdown using Dockling package
-  icon: icon.svg
+  icon: icon.png
 tools:
-  - tools/dify_plugin_dockling.yaml
+  - tools/convert_to_markdown_files.yaml
+  - tools/convert_to_markdown_text.yaml
+  - tools/convert_to_markdown_json.yaml
+  - tools/convert_to_chunks.yaml
+  - tools/table_extraction_from_pdf.yaml
 extra:
   python:
     source: provider/dify_plugin_dockling.py

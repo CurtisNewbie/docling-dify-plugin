@@ -1,18 +1,18 @@
 version: 0.0.1
 type: plugin
 author: s20ss
-name: dify_plugin_dockling
+name: dockling
 label:
-  en_US: dify_plugin_dockling
-  ja_JP: dify_plugin_dockling
-  zh_Hans: dify_plugin_dockling
-  pt_BR: dify_plugin_dockling
+  en_US: dockling
+  ja_JP: dockling
+  zh_Hans: dockling
+  pt_BR: dockling
 description:
   en_US: Tool to convert files to markdown using Dockling package
   ja_JP: Tool to convert files to markdown using Dockling package
   zh_Hans: Tool to convert files to markdown using Dockling package
   pt_BR: Tool to convert files to markdown using Dockling package
-icon: icon.svg
+icon: icon.png
 resource:
   memory: 268435456
   permission:
@@ -37,7 +37,7 @@ resource:
       size: 1048576
 plugins:
   tools:
-    - provider/dify_plugin_dockling.yaml
+    - provider/dockling.yaml
 meta:
   version: 0.0.1
   arch:

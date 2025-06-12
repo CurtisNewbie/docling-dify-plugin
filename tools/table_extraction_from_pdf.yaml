@@ -1,0 +1,30 @@
+identity:
+  name: docling_table_extraction_from_pdf
+  author: s20ss
+  label:
+    en_US: Docling Table Extraction From PDF
+    zh_Hans: Docling Table Extraction From PDF
+    pt_BR: Docling Table Extraction From PDF
+description:
+  human:
+    en_US: Tool to extract tables from pdf files
+    zh_Hans: Tool to extract tables from pdf files
+    pt_BR: Tool to extract tables from pdf files
+  llm: Tool to extract tables from pdf files
+parameters:
+  - name: files
+    type: files
+    required: true
+    label:
+      en_US: Files To Convert
+      zh_Hans: 要转换的文件
+      pt_BR: Arquivos para Converter
+    human_description:
+      en_US: Tool to extract tables from pdf files
+      zh_Hans: Tool to extract tables from pdf files
+      pt_BR: Tool to extract tables from pdf files
+    llm_description: Tool to extract tables from pdf files
+    form: llm
+extra:
+  python:
+    source: tools/table_extraction_from_pdf.py
