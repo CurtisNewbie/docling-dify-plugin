@@ -13,6 +13,8 @@ description:
   zh_Hans: Tool to convert files to markdown using Dockling package
   pt_BR: Tool to convert files to markdown using Dockling package
 icon: icon.png
+tags:
+    - utilities
 resource:
   memory: 268435456
   permission:

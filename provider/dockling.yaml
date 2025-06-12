@@ -10,6 +10,8 @@ identity:
     zh_Hans: Tool to convert files to markdown using Dockling package
     pt_BR: Tool to convert files to markdown using Dockling package
   icon: icon.png
+  tags:
+    - utilities
 tools:
   - tools/convert_to_markdown_files.yaml
   - tools/convert_to_markdown_text.yaml
