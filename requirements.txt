@@ -1,3 +1,4 @@
+--index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 dify_plugin>=0.2.0,<0.3.0
 docling
 transformers

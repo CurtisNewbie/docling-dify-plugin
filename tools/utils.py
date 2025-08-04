@@ -23,13 +23,24 @@ class DifyDocling():
         Returns:
             str: Markdown representation of the documents.
         """
+
+        do_ocr = False # enable/disable ocr
+        ocr_use_gpu = False # cpu based ocr
+
         pdf_pipeline = PdfPipelineOptions()
-        pdf_pipeline.do_ocr = True
-        pdf_pipeline.ocr_options.use_gpu = False # cpu based ocr
+        pdf_pipeline.do_ocr = do_ocr
         pdf_pipeline.do_table_structure = True
+
+        if do_ocr:
+            pdf_pipeline.ocr_options.use_gpu = ocr_use_gpu
+            pdf_option = PdfFormatOption(pipeline_options=pdf_pipeline)
+        else:
+            pdf_pipeline.table_structure_options.do_cell_matching = False
+            pdf_option = PdfFormatOption(pipeline_options=pdf_pipeline, backend=PyPdfiumDocumentBackend)
+
         doc_converter = DocumentConverter(
             format_options={
-                InputFormat.PDF: PdfFormatOption(pipeline_options=pdf_pipeline)
+                InputFormat.PDF: pdf_option
             }
         )
         converted_markdowns = doc_converter.convert_all(file_path_list)
