@@ -7,22 +7,31 @@ from docling.document_converter import (
 )
 from docling.pipeline.simple_pipeline import SimplePipeline
 from docling.pipeline.standard_pdf_pipeline import StandardPdfPipeline
+from docling.pipeline.standard_pdf_pipeline import StandardPdfPipeline, PdfPipelineOptions
 from docling.chunking import HybridChunker
 import pandas as pd
 
 class DifyDocling():
-    
+
     def documents_to_markdown(self,file_path_list: list[str],) -> str:
         """
         Convert a list of document file paths to markdown format.
-        
+
         Args:
             file_path_list (list[str]): List of file paths to documents.
-        
+
         Returns:
             str: Markdown representation of the documents.
         """
-        doc_converter = DocumentConverter()
+        pdf_pipeline = PdfPipelineOptions()
+        pdf_pipeline.do_ocr = True
+        pdf_pipeline.ocr_options.use_gpu = False # cpu based ocr
+        pdf_pipeline.do_table_structure = True
+        doc_converter = DocumentConverter(
+            format_options={
+                InputFormat.PDF: PdfFormatOption(pipeline_options=pdf_pipeline)
+            }
+        )
         converted_markdowns = doc_converter.convert_all(file_path_list)
         markdown_results = []
         for result in converted_markdowns:
@@ -52,8 +61,8 @@ class DifyDocling():
 
 
 
-    
-    
+
+
 
 
 
