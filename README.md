@@ -1,6 +1,6 @@
 ## dify_plugin_dockling
 
-**Author:** s20ss
+**Author:** curtisnewbie
 **Version:** 0.0.1
 **Type:** tool
 
@@ -21,7 +21,7 @@ The following tools are available in the `tools/` directory:
 - **utils.py**: Utility functions used by other tools.
 
 
-## Screenshots 
+## Screenshots
 ![Tools List](uploads/image1.png)
 ![Tools Configuration](uploads/image2.png)
 
@@ -31,6 +31,6 @@ See `PRIVACY.md` for privacy and usage information.
 
 
 ## Github Repo
-https://github.com/s20ss/docling-dify-plugin
+https://github.com/curtisnewbie/docling-dify-plugin
 
 

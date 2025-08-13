@@ -1,6 +1,6 @@
 identity:
   name: docling_convert_files_to_chunks
-  author: s20ss
+  author: curtisnewbie
   label:
     en_US: Docling Convert Files to Chunks using docling chunker
     zh_Hans: Docling Convert Files to Chunks using docling chunker
