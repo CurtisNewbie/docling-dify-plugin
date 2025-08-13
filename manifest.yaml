@@ -8,10 +8,10 @@ label:
   zh_Hans: dockling
   pt_BR: dockling
 description:
-  en_US: Tool to convert files to markdown using Dockling package
-  ja_JP: Tool to convert files to markdown using Dockling package
-  zh_Hans: Tool to convert files to markdown using Dockling package
-  pt_BR: Tool to convert files to markdown using Dockling package
+  en_US: Tool to convert files to markdown using Dockling package (cpu only)
+  ja_JP: Tool to convert files to markdown using Dockling package (cpu only)
+  zh_Hans: Tool to convert files to markdown using Dockling package (cpu only)
+  pt_BR: Tool to convert files to markdown using Dockling package (cpu only)
 icon: icon.png
 tags:
     - utilities
